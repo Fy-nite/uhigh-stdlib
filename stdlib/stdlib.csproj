@@ -5,14 +5,14 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <PackageId>uhigh-stdlib</PackageId>
-        <Version>1.1.0</Version>
+        <Version>1.1.1</Version>
         <Authors>charlie-san</Authors>
         <Company>Finite</Company>
         <Description>Micro-High's official Standard Library For dotnet</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/fy-nite/uhigh-stdlib</PackageProjectUrl>
         <RepositoryUrl>https://github.com/fy-nite/uhigh-stdlib</RepositoryUrl>
-        <Copyright>Copyright © 2024 Finite</Copyright>
+        <Copyright>Copyright © 2025 Finite</Copyright>
         <PackageReadmeFile>README.md</PackageReadmeFile>
             <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>

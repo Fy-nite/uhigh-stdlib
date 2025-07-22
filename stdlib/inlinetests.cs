@@ -41,7 +41,7 @@ namespace StdLib
     }
 
     // Attribute to specify expected return value and arguments for a function call
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
+    [AttributeUsage(AttributeTargets.Method, AllowMultiple = true, Inherited = true)]
     public class CallAttribute : Attribute
     {
         public object Expected { get; }
@@ -105,12 +105,22 @@ namespace StdLib
     {
         public static void RunAllTests()
         {
-            int total = 0, passed = 0, failed = 0;
             var mainAssembly = Assembly.GetExecutingAssembly();
             var testClasses = mainAssembly
                 .GetTypes()
                 .Where(t => t.IsClass && t.IsPublic && !t.IsAbstract && t.Assembly == mainAssembly);
 
+            RunTestsOnClasses(testClasses);
+        }
+
+        public static void RunAllTests(Type testClass)
+        {
+            RunTestsOnClasses(new[] { testClass });
+        }
+
+        private static void RunTestsOnClasses(IEnumerable<Type> testClasses)
+        {
+            int total = 0, passed = 0, failed = 0;
             foreach (var cls in testClasses)
             {
                 // Find setup/cleanup methods
