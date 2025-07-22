@@ -1,0 +1,183 @@
+\doxysection{Std\+Lib.\+Observable\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_std_lib_1_1_observable-1-g}{}\label{class_std_lib_1_1_observable-1-g}\index{StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}}
+
+
+Observable value that can be watched for changes.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_std_lib_1_1_observable-1-g_a3a9b197268ba07788701455990c48637}{Observable}} (T initial\+Value, bool track\+History=false)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_std_lib_1_1_observable-1-g}{Observable$<$\+T$>$} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_observable-1-g_a80f66a66559e562f29bf56b80204db09}\label{class_std_lib_1_1_observable-1-g_a80f66a66559e562f29bf56b80204db09} 
+{\bfseries Observable} (bool track\+History=false)
+\item 
+void \mbox{\hyperlink{class_std_lib_1_1_observable-1-g_a347427fa4cfe53de85b7258516d8a41f}{Subscribe}} (Action$<$ T, T $>$ observer)
+\begin{DoxyCompactList}\small\item\em Subscribes the observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_std_lib_1_1_observable-1-g_a03c75270577a3efc039eba8b9004ca8d}{Subscribe}} (Action$<$ T $>$ observer)
+\begin{DoxyCompactList}\small\item\em Subscribes with single parameter (new value only) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_std_lib_1_1_observable-1-g_a0dd0f0bf2579ca1f0b703d450f806ac7}{Add}} (T value)
+\begin{DoxyCompactList}\small\item\em Adds a new value (alias for Value setter for method chaining) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_std_lib_1_1_observable-1-g_a530e48d2559cc6081700a3c3773f29e2}{Emit}} (T value)
+\begin{DoxyCompactList}\small\item\em Emits a value (alias for Value setter) \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_std_lib_1_1_observable-1-g_af8b2cc474d2964379edea30d7d30164b}{Get\+Seconds\+Ago}} (double seconds)
+\begin{DoxyCompactList}\small\item\em Gets the seconds ago using the specified seconds. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_std_lib_1_1_observable-1-g_af6dd8ec01f4453b1d2ffe6230217e1cd}{Get\+Minutes\+Ago}} (double minutes)
+\begin{DoxyCompactList}\small\item\em Gets the minutes ago using the specified minutes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static implicit \mbox{\hyperlink{class_std_lib_1_1_observable-1-g_aaf8fa54a0e7ceeb343aa1664303d1175}{operator T}} (\mbox{\hyperlink{class_std_lib_1_1_observable-1-g_a3a9b197268ba07788701455990c48637}{Observable}}$<$ T $>$ observable)
+\begin{DoxyCompactList}\small\item\em Implicit conversion from Observable to T. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_observable-1-g_aa8fc652814da90e97210ab92061de6d4}\label{class_std_lib_1_1_observable-1-g_aa8fc652814da90e97210ab92061de6d4} 
+static implicit {\bfseries operator Observable$<$ T $>$} (T value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_std_lib_1_1_observable-1-g_a050356d97bbbc0be0b80c8c8cf10806a}\label{class_std_lib_1_1_observable-1-g_a050356d97bbbc0be0b80c8c8cf10806a} 
+T {\bfseries Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value of the value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Observable value that can be watched for changes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_std_lib_1_1_observable-1-g_a0dd0f0bf2579ca1f0b703d450f806ac7}\index{StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}!Add@{Add}}
+\index{Add@{Add}!StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_observable-1-g_a0dd0f0bf2579ca1f0b703d450f806ac7} 
+void Std\+Lib.\+Observable$<$ T $>$.Add (\begin{DoxyParamCaption}\item[{T}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a new value (alias for Value setter for method chaining) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_std_lib_1_1_observable-1-g_a530e48d2559cc6081700a3c3773f29e2}\index{StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}!Emit@{Emit}}
+\index{Emit@{Emit}!StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Emit()}{Emit()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_observable-1-g_a530e48d2559cc6081700a3c3773f29e2} 
+void Std\+Lib.\+Observable$<$ T $>$.Emit (\begin{DoxyParamCaption}\item[{T}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emits a value (alias for Value setter) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to emit\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_std_lib_1_1_observable-1-g_af6dd8ec01f4453b1d2ffe6230217e1cd}\index{StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}!GetMinutesAgo@{GetMinutesAgo}}
+\index{GetMinutesAgo@{GetMinutesAgo}!StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetMinutesAgo()}{GetMinutesAgo()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_observable-1-g_af6dd8ec01f4453b1d2ffe6230217e1cd} 
+T Std\+Lib.\+Observable$<$ T $>$.Get\+Minutes\+Ago (\begin{DoxyParamCaption}\item[{double}]{minutes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the minutes ago using the specified minutes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minutes} & The minutes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_observable-1-g_af8b2cc474d2964379edea30d7d30164b}\index{StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}!GetSecondsAgo@{GetSecondsAgo}}
+\index{GetSecondsAgo@{GetSecondsAgo}!StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetSecondsAgo()}{GetSecondsAgo()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_observable-1-g_af8b2cc474d2964379edea30d7d30164b} 
+T Std\+Lib.\+Observable$<$ T $>$.Get\+Seconds\+Ago (\begin{DoxyParamCaption}\item[{double}]{seconds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the seconds ago using the specified seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds} & The seconds\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_observable-1-g_a3a9b197268ba07788701455990c48637}\index{StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}!Observable@{Observable}}
+\index{Observable@{Observable}!StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Observable()}{Observable()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_observable-1-g_a3a9b197268ba07788701455990c48637} 
+Std\+Lib.\+Observable$<$ T $>$.Observable (\begin{DoxyParamCaption}\item[{T}]{initial\+Value}{, }\item[{bool}]{track\+History}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \doxylink{class_std_lib_1_1_observable-1-g}{Observable$<$\+T$>$} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Value} & The initial value\\
+\hline
+{\em track\+History} & The track history\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_std_lib_1_1_observable-1-g_aaf8fa54a0e7ceeb343aa1664303d1175}\index{StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}!operator T@{operator T}}
+\index{operator T@{operator T}!StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator T()}{operator T()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_observable-1-g_aaf8fa54a0e7ceeb343aa1664303d1175} 
+static implicit Std\+Lib.\+Observable$<$ T $>$.operator T (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_std_lib_1_1_observable-1-g_a3a9b197268ba07788701455990c48637}{Observable}}$<$ T $>$}]{observable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Implicit conversion from Observable to T. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observable} & The observable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the observable
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_observable-1-g_a03c75270577a3efc039eba8b9004ca8d}\index{StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Subscribe()}{Subscribe()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_observable-1-g_a03c75270577a3efc039eba8b9004ca8d} 
+void Std\+Lib.\+Observable$<$ T $>$.Subscribe (\begin{DoxyParamCaption}\item[{Action$<$ T $>$}]{observer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Subscribes with single parameter (new value only) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_std_lib_1_1_observable-1-g_a347427fa4cfe53de85b7258516d8a41f}\index{StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!StdLib.Observable$<$ T $>$@{StdLib.Observable$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Subscribe()}{Subscribe()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_observable-1-g_a347427fa4cfe53de85b7258516d8a41f} 
+void Std\+Lib.\+Observable$<$ T $>$.Subscribe (\begin{DoxyParamCaption}\item[{Action$<$ T, T $>$}]{observer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Subscribes the observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+reactive.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\doxysection{Std\+Lib.\+Rate\+Tracker Class Reference}
+\hypertarget{class_std_lib_1_1_rate_tracker}{}\label{class_std_lib_1_1_rate_tracker}\index{StdLib.RateTracker@{StdLib.RateTracker}}
+
+
+Rate limiting and frequency tracking.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_std_lib_1_1_rate_tracker_a1eb9b166400bb60eaf06f0be94c9b1f7}{Rate\+Tracker}} (Time\+Span window, int max\+Events)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_std_lib_1_1_rate_tracker}{Rate\+Tracker} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_std_lib_1_1_rate_tracker_afb5234d589d963c8d2272ef5e46b5010}{Can\+Execute}} ()
+\begin{DoxyCompactList}\small\item\em Cans the execute. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_std_lib_1_1_rate_tracker_a09fd50457d5fd9ffe6e17b06e3fca620}{Try\+Execute}} ()
+\begin{DoxyCompactList}\small\item\em Tries the execute. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_std_lib_1_1_rate_tracker_a8b3b52aafeded30b4147a1b2e3f5749c}\label{class_std_lib_1_1_rate_tracker_a8b3b52aafeded30b4147a1b2e3f5749c} 
+int {\bfseries Current\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the value of the current count. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_rate_tracker_ad1053fd975a1abc4d43d5c3f687f4ae6}\label{class_std_lib_1_1_rate_tracker_ad1053fd975a1abc4d43d5c3f687f4ae6} 
+Time\+Span {\bfseries Time\+Until\+Next\+Slot}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the value of the time until next slot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rate limiting and frequency tracking. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_std_lib_1_1_rate_tracker_a1eb9b166400bb60eaf06f0be94c9b1f7}\index{StdLib.RateTracker@{StdLib.RateTracker}!RateTracker@{RateTracker}}
+\index{RateTracker@{RateTracker}!StdLib.RateTracker@{StdLib.RateTracker}}
+\doxysubsubsection{\texorpdfstring{RateTracker()}{RateTracker()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_rate_tracker_a1eb9b166400bb60eaf06f0be94c9b1f7} 
+Std\+Lib.\+Rate\+Tracker.\+Rate\+Tracker (\begin{DoxyParamCaption}\item[{Time\+Span}]{window}{, }\item[{int}]{max\+Events}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \doxylink{class_std_lib_1_1_rate_tracker}{Rate\+Tracker} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The window\\
+\hline
+{\em max\+Events} & The max events\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_std_lib_1_1_rate_tracker_afb5234d589d963c8d2272ef5e46b5010}\index{StdLib.RateTracker@{StdLib.RateTracker}!CanExecute@{CanExecute}}
+\index{CanExecute@{CanExecute}!StdLib.RateTracker@{StdLib.RateTracker}}
+\doxysubsubsection{\texorpdfstring{CanExecute()}{CanExecute()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_rate_tracker_afb5234d589d963c8d2272ef5e46b5010} 
+bool Std\+Lib.\+Rate\+Tracker.\+Can\+Execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Cans the execute. 
+
+\begin{DoxyReturn}{Returns}
+The bool
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_rate_tracker_a09fd50457d5fd9ffe6e17b06e3fca620}\index{StdLib.RateTracker@{StdLib.RateTracker}!TryExecute@{TryExecute}}
+\index{TryExecute@{TryExecute}!StdLib.RateTracker@{StdLib.RateTracker}}
+\doxysubsubsection{\texorpdfstring{TryExecute()}{TryExecute()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_rate_tracker_a09fd50457d5fd9ffe6e17b06e3fca620} 
+bool Std\+Lib.\+Rate\+Tracker.\+Try\+Execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tries the execute. 
+
+\begin{DoxyReturn}{Returns}
+The bool
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+temporal.\+cs\end{DoxyCompactItemize}

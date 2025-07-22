@@ -1,0 +1,116 @@
+\doxysection{Std\+Lib.\+Temporal\+Dictionary\texorpdfstring{$<$}{<} TKey, TValue \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_std_lib_1_1_temporal_dictionary-2-g}{}\label{class_std_lib_1_1_temporal_dictionary-2-g}\index{StdLib.TemporalDictionary$<$ TKey, TValue $>$@{StdLib.TemporalDictionary$<$ TKey, TValue $>$}}
+
+
+Temporal dictionary that tracks changes to key-\/value pairs.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_std_lib_1_1_temporal_dictionary-2-g_a6feb2fc70f84e7c30962528e9435802c}{Set}} (TKey key, TValue value, string? reason=null)
+\begin{DoxyCompactList}\small\item\em Sets the key. \end{DoxyCompactList}\item 
+TValue? \mbox{\hyperlink{class_std_lib_1_1_temporal_dictionary-2-g_ae6e018db00e4f670290e0a3b27b494de}{Get}} (TKey key)
+\begin{DoxyCompactList}\small\item\em Gets the key. \end{DoxyCompactList}\item 
+TValue? \mbox{\hyperlink{class_std_lib_1_1_temporal_dictionary-2-g_ad3c7a8a0e611e07e5b0d8b37aa86eb5c}{Get\+Seconds\+Ago}} (TKey key, double seconds)
+\begin{DoxyCompactList}\small\item\em Gets the seconds ago using the specified key. \end{DoxyCompactList}\item 
+TValue? \mbox{\hyperlink{class_std_lib_1_1_temporal_dictionary-2-g_aa7c2acc3d4578bac284edb7ea98ea5d3}{Get\+Minutes\+Ago}} (TKey key, double minutes)
+\begin{DoxyCompactList}\small\item\em Gets the minutes ago using the specified key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_std_lib_1_1_temporal_dictionary-2-g_a267c50c9ee5a1a5ed3959aea4aac77b4}\label{class_std_lib_1_1_temporal_dictionary-2-g_a267c50c9ee5a1a5ed3959aea4aac77b4} 
+IEnumerable$<$ TKey $>$ {\bfseries Keys}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the value of the keys. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Temporal dictionary that tracks changes to key-\/value pairs. \begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TKey} : {\em notnull}]\item[{\em TValue} : {\em class}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_std_lib_1_1_temporal_dictionary-2-g_ae6e018db00e4f670290e0a3b27b494de}\index{StdLib.TemporalDictionary$<$ TKey, TValue $>$@{StdLib.TemporalDictionary$<$ TKey, TValue $>$}!Get@{Get}}
+\index{Get@{Get}!StdLib.TemporalDictionary$<$ TKey, TValue $>$@{StdLib.TemporalDictionary$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_temporal_dictionary-2-g_ae6e018db00e4f670290e0a3b27b494de} 
+TValue? Std\+Lib.\+Temporal\+Dictionary$<$ TKey, TValue $>$.Get (\begin{DoxyParamCaption}\item[{TKey}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_temporal_dictionary-2-g_aa7c2acc3d4578bac284edb7ea98ea5d3}\index{StdLib.TemporalDictionary$<$ TKey, TValue $>$@{StdLib.TemporalDictionary$<$ TKey, TValue $>$}!GetMinutesAgo@{GetMinutesAgo}}
+\index{GetMinutesAgo@{GetMinutesAgo}!StdLib.TemporalDictionary$<$ TKey, TValue $>$@{StdLib.TemporalDictionary$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{GetMinutesAgo()}{GetMinutesAgo()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_temporal_dictionary-2-g_aa7c2acc3d4578bac284edb7ea98ea5d3} 
+TValue? Std\+Lib.\+Temporal\+Dictionary$<$ TKey, TValue $>$.Get\+Minutes\+Ago (\begin{DoxyParamCaption}\item[{TKey}]{key}{, }\item[{double}]{minutes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the minutes ago using the specified key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key\\
+\hline
+{\em minutes} & The minutes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_temporal_dictionary-2-g_ad3c7a8a0e611e07e5b0d8b37aa86eb5c}\index{StdLib.TemporalDictionary$<$ TKey, TValue $>$@{StdLib.TemporalDictionary$<$ TKey, TValue $>$}!GetSecondsAgo@{GetSecondsAgo}}
+\index{GetSecondsAgo@{GetSecondsAgo}!StdLib.TemporalDictionary$<$ TKey, TValue $>$@{StdLib.TemporalDictionary$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{GetSecondsAgo()}{GetSecondsAgo()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_temporal_dictionary-2-g_ad3c7a8a0e611e07e5b0d8b37aa86eb5c} 
+TValue? Std\+Lib.\+Temporal\+Dictionary$<$ TKey, TValue $>$.Get\+Seconds\+Ago (\begin{DoxyParamCaption}\item[{TKey}]{key}{, }\item[{double}]{seconds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the seconds ago using the specified key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key\\
+\hline
+{\em seconds} & The seconds\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_temporal_dictionary-2-g_a6feb2fc70f84e7c30962528e9435802c}\index{StdLib.TemporalDictionary$<$ TKey, TValue $>$@{StdLib.TemporalDictionary$<$ TKey, TValue $>$}!Set@{Set}}
+\index{Set@{Set}!StdLib.TemporalDictionary$<$ TKey, TValue $>$@{StdLib.TemporalDictionary$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_temporal_dictionary-2-g_a6feb2fc70f84e7c30962528e9435802c} 
+void Std\+Lib.\+Temporal\+Dictionary$<$ TKey, TValue $>$.Set (\begin{DoxyParamCaption}\item[{TKey}]{key}{, }\item[{TValue}]{value}{, }\item[{string?}]{reason}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key\\
+\hline
+{\em value} & The value\\
+\hline
+{\em reason} & The reason\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+temporal.\+cs\end{DoxyCompactItemize}

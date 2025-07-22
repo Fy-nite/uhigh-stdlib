@@ -1,0 +1,49 @@
+\doxysection{Std\+Lib.\+Cache\texorpdfstring{$<$}{<} TKey, TValue \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_std_lib_1_1_cache-2-g}{}\label{class_std_lib_1_1_cache-2-g}\index{StdLib.Cache$<$ TKey, TValue $>$@{StdLib.Cache$<$ TKey, TValue $>$}}
+
+
+In-\/memory cache with expiration and LRU eviction.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_std_lib_1_1_cache-2-g_ae6e8d520facc091b62ae503cb23119f3}\label{class_std_lib_1_1_cache-2-g_ae6e8d520facc091b62ae503cb23119f3} 
+{\bfseries Cache} (int max\+Size=1000, Time\+Span? default\+Expiration=null)
+\item 
+\Hypertarget{class_std_lib_1_1_cache-2-g_a051246dc93a76062d7a9dff2f12d206e}\label{class_std_lib_1_1_cache-2-g_a051246dc93a76062d7a9dff2f12d206e} 
+TValue? {\bfseries Get} (TKey key)
+\begin{DoxyCompactList}\small\item\em Get value from cache. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_cache-2-g_a2306e5cbfa35351fb0a1c4277987b01d}\label{class_std_lib_1_1_cache-2-g_a2306e5cbfa35351fb0a1c4277987b01d} 
+void {\bfseries Set} (TKey key, TValue value, Time\+Span? expiration=null)
+\begin{DoxyCompactList}\small\item\em Set value in cache. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_cache-2-g_a0a74953d8d8fcada69636551d50f5c54}\label{class_std_lib_1_1_cache-2-g_a0a74953d8d8fcada69636551d50f5c54} 
+TValue {\bfseries Get\+Or\+Set} (TKey key, Func$<$ TValue $>$ factory, Time\+Span? expiration=null)
+\begin{DoxyCompactList}\small\item\em Get or set value using factory function. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_cache-2-g_ae5dc09008c720ad8e5a320dd2d07698e}\label{class_std_lib_1_1_cache-2-g_ae5dc09008c720ad8e5a320dd2d07698e} 
+bool {\bfseries Remove} (TKey key)
+\begin{DoxyCompactList}\small\item\em Remove value from cache. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_cache-2-g_aad45ae848aa1a8ce07ab9df7ac6e543e}\label{class_std_lib_1_1_cache-2-g_aad45ae848aa1a8ce07ab9df7ac6e543e} 
+bool {\bfseries Contains\+Key} (TKey key)
+\begin{DoxyCompactList}\small\item\em Check if key exists in cache. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_cache-2-g_ac09382c2be4931e432c562dcbffeff13}\label{class_std_lib_1_1_cache-2-g_ac09382c2be4931e432c562dcbffeff13} 
+void {\bfseries Clear} ()
+\begin{DoxyCompactList}\small\item\em Clear all cache entries. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_cache-2-g_a0bd870c1ec6902d79ffa3fe366455ef4}\label{class_std_lib_1_1_cache-2-g_a0bd870c1ec6902d79ffa3fe366455ef4} 
+\mbox{\hyperlink{class_std_lib_1_1_cache_stats}{Cache\+Stats}} {\bfseries Get\+Stats} ()
+\begin{DoxyCompactList}\small\item\em Get cache statistics. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_cache-2-g_ab397b9c6a9da5a6d50419909b3672a74}\label{class_std_lib_1_1_cache-2-g_ab397b9c6a9da5a6d50419909b3672a74} 
+void {\bfseries Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Clean up expired items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+In-\/memory cache with expiration and LRU eviction. \begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TKey} : {\em notnull}]\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cache.\+cs\end{DoxyCompactItemize}

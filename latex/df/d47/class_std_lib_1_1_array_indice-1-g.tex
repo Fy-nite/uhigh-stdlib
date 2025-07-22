@@ -1,0 +1,170 @@
+\doxysection{Std\+Lib.\+Array\+Indice\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_std_lib_1_1_array_indice-1-g}{}\label{class_std_lib_1_1_array_indice-1-g}\index{StdLib.ArrayIndice$<$ T $>$@{StdLib.ArrayIndice$<$ T $>$}}
+
+
+Represents a slice/view of an array starting from a specific index.  
+
+
+Inheritance diagram for Std\+Lib.\+Array\+Indice\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{df/d47/class_std_lib_1_1_array_indice-1-g}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_std_lib_1_1_array_indice-1-g_a9abac4a207136cfaac132ae05b074b29}{Array\+Indice}} (List$<$ T $>$ source\+Array, int start\+Offset)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_std_lib_1_1_array_indice-1-g}{Array\+Indice$<$\+T$>$} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a9c78d3f5980b9f94591f8d7d66da3300}\label{class_std_lib_1_1_array_indice-1-g_a9c78d3f5980b9f94591f8d7d66da3300} 
+\mbox{\hyperlink{class_std_lib_1_1_array_indice-1-g_a9abac4a207136cfaac132ae05b074b29}{Array\+Indice}}$<$ T $>$ {\bfseries Collect} (int global\+Index)
+\begin{DoxyCompactList}\small\item\em Collect item from source array at the specified global index. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a8ef73999f056da9658fef7a1fc4f866b}\label{class_std_lib_1_1_array_indice-1-g_a8ef73999f056da9658fef7a1fc4f866b} 
+T {\bfseries At} (int global\+Index)
+\begin{DoxyCompactList}\small\item\em Get item at global index (relative to original array) \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a1f4b7a4f5a1e3dc1e5a80ab4a093aa20}\label{class_std_lib_1_1_array_indice-1-g_a1f4b7a4f5a1e3dc1e5a80ab4a093aa20} 
+List$<$ T $>$ {\bfseries Map\+To\+Array} ()
+\begin{DoxyCompactList}\small\item\em Convert this indice to a regular array starting from index 0. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_adb6209fcc4ab94a4e23887cd73e66484}\label{class_std_lib_1_1_array_indice-1-g_adb6209fcc4ab94a4e23887cd73e66484} 
+void {\bfseries Add} (T item)
+\begin{DoxyCompactList}\small\item\em Add item to this indice. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a709a2d1d5520bd172b7e194781150642}\label{class_std_lib_1_1_array_indice-1-g_a709a2d1d5520bd172b7e194781150642} 
+\mbox{\hyperlink{class_std_lib_1_1_array_indice-1-g_a9abac4a207136cfaac132ae05b074b29}{Array\+Indice}}$<$ T $>$ {\bfseries Collect\+All} ()
+\begin{DoxyCompactList}\small\item\em Collect all items from the source array starting from the offset. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a502e80d00323edeb8aa630644a3f69a5}\label{class_std_lib_1_1_array_indice-1-g_a502e80d00323edeb8aa630644a3f69a5} 
+List$<$ T $>$ {\bfseries Return} (List$<$ T $>$ target\+Array)
+\begin{DoxyCompactList}\small\item\em Return all items in this indice back to the source array. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a5aa75f42470c085ab6a5db7e8a6a3966}\label{class_std_lib_1_1_array_indice-1-g_a5aa75f42470c085ab6a5db7e8a6a3966} 
+IEnumerable$<$ T $>$ {\bfseries Get\+Items} ()
+\begin{DoxyCompactList}\small\item\em Get all items as enumerable. \end{DoxyCompactList}\item 
+IEnumerator$<$ T $>$ \mbox{\hyperlink{class_std_lib_1_1_array_indice-1-g_a4c874834aefc0e803db9efb182ae3841}{Get\+Enumerator}} ()
+\begin{DoxyCompactList}\small\item\em Gets the enumerator. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a4d047235abfc53bc9bba93245b487149}\label{class_std_lib_1_1_array_indice-1-g_a4d047235abfc53bc9bba93245b487149} 
+void {\bfseries Clear} ()
+\begin{DoxyCompactList}\small\item\em Clears this instance. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_std_lib_1_1_array_indice-1-g_a7844639c7102b303b0848d23f0310bd9}{Contains}} (T item)
+\begin{DoxyCompactList}\small\item\em Containses the item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_std_lib_1_1_array_indice-1-g_a7e798bd3ced0ff7bb9128f5d7bb603b9}{Copy\+To}} (T\mbox{[}$\,$\mbox{]} array, int array\+Index)
+\begin{DoxyCompactList}\small\item\em Copies the to using the specified array. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_std_lib_1_1_array_indice-1-g_a1d45ee3dc4a91a863dc7243022a752b1}{Remove}} (T item)
+\begin{DoxyCompactList}\small\item\em Removes the item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a7029c0ad995e02256a1ee6225007386e}\label{class_std_lib_1_1_array_indice-1-g_a7029c0ad995e02256a1ee6225007386e} 
+int {\bfseries Start\+Offset}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the starting offset in the original array. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a01381bd1bdf518e71c8dcc1b111ea11e}\label{class_std_lib_1_1_array_indice-1-g_a01381bd1bdf518e71c8dcc1b111ea11e} 
+int {\bfseries Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the count of items in this indice. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a699c6a56549d4c5f27912be559f6cde0}\label{class_std_lib_1_1_array_indice-1-g_a699c6a56549d4c5f27912be559f6cde0} 
+T {\bfseries this\mbox{[}int local\+Index\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Access item at local index (0-\/based within this indice) \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_aa057a422da483150e744ab757befcc3b}\label{class_std_lib_1_1_array_indice-1-g_aa057a422da483150e744ab757befcc3b} 
+Type {\bfseries Element\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the type of elements in this indice for reflection. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a831385e7cad94b0be69f08709b1b746b}\label{class_std_lib_1_1_array_indice-1-g_a831385e7cad94b0be69f08709b1b746b} 
+bool {\bfseries Is\+Empty}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets whether this indice is empty. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_ae0e2abf9d979b257479d077498db92c5}\label{class_std_lib_1_1_array_indice-1-g_ae0e2abf9d979b257479d077498db92c5} 
+bool {\bfseries Is\+Read\+Only}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets whether this indice is read-\/only. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a slice/view of an array starting from a specific index. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a9abac4a207136cfaac132ae05b074b29}\index{StdLib.ArrayIndice$<$ T $>$@{StdLib.ArrayIndice$<$ T $>$}!ArrayIndice@{ArrayIndice}}
+\index{ArrayIndice@{ArrayIndice}!StdLib.ArrayIndice$<$ T $>$@{StdLib.ArrayIndice$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ArrayIndice()}{ArrayIndice()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_array_indice-1-g_a9abac4a207136cfaac132ae05b074b29} 
+Std\+Lib.\+Array\+Indice$<$ T $>$.Array\+Indice (\begin{DoxyParamCaption}\item[{List$<$ T $>$}]{source\+Array}{, }\item[{int}]{start\+Offset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \doxylink{class_std_lib_1_1_array_indice-1-g}{Array\+Indice$<$\+T$>$} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Array} & The source array\\
+\hline
+{\em start\+Offset} & The start offset\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a7844639c7102b303b0848d23f0310bd9}\index{StdLib.ArrayIndice$<$ T $>$@{StdLib.ArrayIndice$<$ T $>$}!Contains@{Contains}}
+\index{Contains@{Contains}!StdLib.ArrayIndice$<$ T $>$@{StdLib.ArrayIndice$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_array_indice-1-g_a7844639c7102b303b0848d23f0310bd9} 
+bool Std\+Lib.\+Array\+Indice$<$ T $>$.Contains (\begin{DoxyParamCaption}\item[{T}]{item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Containses the item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The bool
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a7e798bd3ced0ff7bb9128f5d7bb603b9}\index{StdLib.ArrayIndice$<$ T $>$@{StdLib.ArrayIndice$<$ T $>$}!CopyTo@{CopyTo}}
+\index{CopyTo@{CopyTo}!StdLib.ArrayIndice$<$ T $>$@{StdLib.ArrayIndice$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CopyTo()}{CopyTo()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_array_indice-1-g_a7e798bd3ced0ff7bb9128f5d7bb603b9} 
+void Std\+Lib.\+Array\+Indice$<$ T $>$.Copy\+To (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{array}{, }\item[{int}]{array\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copies the to using the specified array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array\\
+\hline
+{\em array\+Index} & The array index\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a4c874834aefc0e803db9efb182ae3841}\index{StdLib.ArrayIndice$<$ T $>$@{StdLib.ArrayIndice$<$ T $>$}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!StdLib.ArrayIndice$<$ T $>$@{StdLib.ArrayIndice$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_array_indice-1-g_a4c874834aefc0e803db9efb182ae3841} 
+IEnumerator$<$ T $>$ Std\+Lib.\+Array\+Indice$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the enumerator. 
+
+\begin{DoxyReturn}{Returns}
+An enumerator of t
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_array_indice-1-g_a1d45ee3dc4a91a863dc7243022a752b1}\index{StdLib.ArrayIndice$<$ T $>$@{StdLib.ArrayIndice$<$ T $>$}!Remove@{Remove}}
+\index{Remove@{Remove}!StdLib.ArrayIndice$<$ T $>$@{StdLib.ArrayIndice$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_array_indice-1-g_a1d45ee3dc4a91a863dc7243022a752b1} 
+bool Std\+Lib.\+Array\+Indice$<$ T $>$.Remove (\begin{DoxyParamCaption}\item[{T}]{item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The bool
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+array.\+cs\end{DoxyCompactItemize}

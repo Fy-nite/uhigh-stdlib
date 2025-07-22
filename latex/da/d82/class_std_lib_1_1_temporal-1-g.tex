@@ -1,0 +1,88 @@
+\doxysection{Std\+Lib.\+Temporal\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_std_lib_1_1_temporal-1-g}{}\label{class_std_lib_1_1_temporal-1-g}\index{StdLib.Temporal$<$ T $>$@{StdLib.Temporal$<$ T $>$}}
+
+
+Temporal container that tracks changes to an object over time.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_std_lib_1_1_temporal-1-g_ac1222ae0a9ff730edcfdfaaea828f19d}{Temporal}} (T initial\+Value, int max\+History=100)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_std_lib_1_1_temporal-1-g}{Temporal$<$\+T$>$} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_a6d4c0a59fe42914a0fc98ba0a607c9bb}\label{class_std_lib_1_1_temporal-1-g_a6d4c0a59fe42914a0fc98ba0a607c9bb} 
+void {\bfseries Update} (T new\+Value, string? reason=null)
+\begin{DoxyCompactList}\small\item\em Updates the value and creates a snapshot. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_aabbe66a6665681e34d4bb0addb0c6b8f}\label{class_std_lib_1_1_temporal-1-g_aabbe66a6665681e34d4bb0addb0c6b8f} 
+T? {\bfseries Get\+Seconds\+Ago} (double seconds)
+\begin{DoxyCompactList}\small\item\em Get the value as it was X seconds ago. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_a7902a2fa13e73104db221eb9dfd3853d}\label{class_std_lib_1_1_temporal-1-g_a7902a2fa13e73104db221eb9dfd3853d} 
+T? {\bfseries Get\+Minutes\+Ago} (double minutes)
+\begin{DoxyCompactList}\small\item\em Get the value as it was X minutes ago. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_a114381fe499baa852f6f3aa8c8a9a196}\label{class_std_lib_1_1_temporal-1-g_a114381fe499baa852f6f3aa8c8a9a196} 
+Snapshot$<$ T $>$? {\bfseries Get\+Last\+Change} ()
+\begin{DoxyCompactList}\small\item\em Get last change made. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_a518e12dedc9ec9f5963a60a7ce67300a}\label{class_std_lib_1_1_temporal-1-g_a518e12dedc9ec9f5963a60a7ce67300a} 
+T {\bfseries Get\+Value\+At} (Date\+Time timestamp)
+\begin{DoxyCompactList}\small\item\em Get the value at a specific timestamp. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_ac3c1b9bee94554cd850a3d9254ab01a7}\label{class_std_lib_1_1_temporal-1-g_ac3c1b9bee94554cd850a3d9254ab01a7} 
+T {\bfseries Get\+Last\+Value\+Before\+Latest} ()
+\begin{DoxyCompactList}\small\item\em Get the Last value before the lastest available snapshot. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_af3b3974558939eb23180043df9e82851}\label{class_std_lib_1_1_temporal-1-g_af3b3974558939eb23180043df9e82851} 
+Snapshot$<$ T $>$? {\bfseries Get\+First\+Change} ()
+\begin{DoxyCompactList}\small\item\em Get the first change made. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_aacdb194f0f5eb25878ec6bc06cce2f69}\label{class_std_lib_1_1_temporal-1-g_aacdb194f0f5eb25878ec6bc06cce2f69} 
+IEnumerable$<$ Snapshot$<$ T $>$ $>$ {\bfseries Get\+Changes\+In\+Range} (Date\+Time start, Date\+Time end)
+\begin{DoxyCompactList}\small\item\em Get all changes within a time range. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_a203f8c1de13ae112bd775092e956a04f}\label{class_std_lib_1_1_temporal-1-g_a203f8c1de13ae112bd775092e956a04f} 
+IEnumerable$<$ Snapshot$<$ T $>$ $>$ {\bfseries Get\+History} ()
+\begin{DoxyCompactList}\small\item\em Get the history of changes with reasons. \end{DoxyCompactList}\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_a059e2c6ff6444eebf659d025ecd6170b}\label{class_std_lib_1_1_temporal-1-g_a059e2c6ff6444eebf659d025ecd6170b} 
+bool {\bfseries Rollback\+To} (Date\+Time timestamp)
+\begin{DoxyCompactList}\small\item\em Rollback to a previous state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_ad1b7444a9811ffe606b20312aa42b3b6}\label{class_std_lib_1_1_temporal-1-g_ad1b7444a9811ffe606b20312aa42b3b6} 
+static implicit {\bfseries operator T} (\mbox{\hyperlink{class_std_lib_1_1_temporal-1-g_ac1222ae0a9ff730edcfdfaaea828f19d}{Temporal}}$<$ T $>$ temporal)
+\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_a4e56974eaa77e1727be68a68defe330c}\label{class_std_lib_1_1_temporal-1-g_a4e56974eaa77e1727be68a68defe330c} 
+static implicit {\bfseries operator Temporal$<$ T $>$} (T value)
+\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_a1598d77765f0f5e1bcd0b4a4e796d58c}\label{class_std_lib_1_1_temporal-1-g_a1598d77765f0f5e1bcd0b4a4e796d58c} 
+static implicit {\bfseries operator Type} (\mbox{\hyperlink{class_std_lib_1_1_temporal-1-g_ac1222ae0a9ff730edcfdfaaea828f19d}{Temporal}}$<$ T $>$ temporal)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_std_lib_1_1_temporal-1-g_aaf59cb793084b3e057a8c5869a2e845c}\label{class_std_lib_1_1_temporal-1-g_aaf59cb793084b3e057a8c5869a2e845c} 
+T {\bfseries Current}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the current value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Temporal container that tracks changes to an object over time. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_std_lib_1_1_temporal-1-g_ac1222ae0a9ff730edcfdfaaea828f19d}\index{StdLib.Temporal$<$ T $>$@{StdLib.Temporal$<$ T $>$}!Temporal@{Temporal}}
+\index{Temporal@{Temporal}!StdLib.Temporal$<$ T $>$@{StdLib.Temporal$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Temporal()}{Temporal()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_temporal-1-g_ac1222ae0a9ff730edcfdfaaea828f19d} 
+Std\+Lib.\+Temporal$<$ T $>$.Temporal (\begin{DoxyParamCaption}\item[{T}]{initial\+Value}{, }\item[{int}]{max\+History}{ = {\ttfamily 100}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \doxylink{class_std_lib_1_1_temporal-1-g}{Temporal$<$\+T$>$} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Value} & The initial value\\
+\hline
+{\em max\+History} & The max history\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+temporal.\+cs\end{DoxyCompactItemize}

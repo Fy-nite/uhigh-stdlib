@@ -1,0 +1,132 @@
+\doxysection{Std\+Lib.\+Event\+Stream\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_std_lib_1_1_event_stream-1-g}{}\label{class_std_lib_1_1_event_stream-1-g}\index{StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}}
+
+
+Event system with temporal tracking.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_std_lib_1_1_event_stream-1-g_ab2a31f1372da16c35bb07dd4193a0a18}{Event\+Stream}} (int max\+Events=1000)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_std_lib_1_1_event_stream-1-g}{Event\+Stream$<$\+T$>$} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_std_lib_1_1_event_stream-1-g_a68b83b827d7ba735c11f61b9126be100}{Emit}} (T event\+Data)
+\begin{DoxyCompactList}\small\item\em Emits the event data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_std_lib_1_1_event_stream-1-g_ae80a905d7b345eac1f47ae0b0ff58d84}{Subscribe}} (Action$<$ T $>$ handler)
+\begin{DoxyCompactList}\small\item\em Subscribes the handler. \end{DoxyCompactList}\item 
+IEnumerable$<$ T $>$ \mbox{\hyperlink{class_std_lib_1_1_event_stream-1-g_a028ce9fa663189a6a546df5c5c426611}{Get\+Events\+In\+Last\+Seconds}} (double seconds)
+\begin{DoxyCompactList}\small\item\em Gets the events in last seconds using the specified seconds. \end{DoxyCompactList}\item 
+IEnumerable$<$ T $>$ \mbox{\hyperlink{class_std_lib_1_1_event_stream-1-g_aa1842d29fb338a9a78c066659adde799}{Get\+Events\+In\+Last\+Minutes}} (double minutes)
+\begin{DoxyCompactList}\small\item\em Gets the events in last minutes using the specified minutes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_std_lib_1_1_event_stream-1-g_ae83d40917916b86118ff83fa099e974d}{Count\+Events\+In\+Last\+Seconds}} (double seconds)
+\begin{DoxyCompactList}\small\item\em Counts the events in last seconds using the specified seconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Event system with temporal tracking. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_std_lib_1_1_event_stream-1-g_ae83d40917916b86118ff83fa099e974d}\index{StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}!CountEventsInLastSeconds@{CountEventsInLastSeconds}}
+\index{CountEventsInLastSeconds@{CountEventsInLastSeconds}!StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CountEventsInLastSeconds()}{CountEventsInLastSeconds()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_event_stream-1-g_ae83d40917916b86118ff83fa099e974d} 
+int Std\+Lib.\+Event\+Stream$<$ T $>$.Count\+Events\+In\+Last\+Seconds (\begin{DoxyParamCaption}\item[{double}]{seconds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Counts the events in last seconds using the specified seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds} & The seconds\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The int
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_event_stream-1-g_a68b83b827d7ba735c11f61b9126be100}\index{StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}!Emit@{Emit}}
+\index{Emit@{Emit}!StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Emit()}{Emit()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_event_stream-1-g_a68b83b827d7ba735c11f61b9126be100} 
+void Std\+Lib.\+Event\+Stream$<$ T $>$.Emit (\begin{DoxyParamCaption}\item[{T}]{event\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emits the event data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Data} & The event data\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_std_lib_1_1_event_stream-1-g_ab2a31f1372da16c35bb07dd4193a0a18}\index{StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}!EventStream@{EventStream}}
+\index{EventStream@{EventStream}!StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EventStream()}{EventStream()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_event_stream-1-g_ab2a31f1372da16c35bb07dd4193a0a18} 
+Std\+Lib.\+Event\+Stream$<$ T $>$.Event\+Stream (\begin{DoxyParamCaption}\item[{int}]{max\+Events}{ = {\ttfamily 1000}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \doxylink{class_std_lib_1_1_event_stream-1-g}{Event\+Stream$<$\+T$>$} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Events} & The max events\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_std_lib_1_1_event_stream-1-g_aa1842d29fb338a9a78c066659adde799}\index{StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}!GetEventsInLastMinutes@{GetEventsInLastMinutes}}
+\index{GetEventsInLastMinutes@{GetEventsInLastMinutes}!StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetEventsInLastMinutes()}{GetEventsInLastMinutes()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_event_stream-1-g_aa1842d29fb338a9a78c066659adde799} 
+IEnumerable$<$ T $>$ Std\+Lib.\+Event\+Stream$<$ T $>$.Get\+Events\+In\+Last\+Minutes (\begin{DoxyParamCaption}\item[{double}]{minutes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the events in last minutes using the specified minutes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minutes} & The minutes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An enumerable of t
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_event_stream-1-g_a028ce9fa663189a6a546df5c5c426611}\index{StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}!GetEventsInLastSeconds@{GetEventsInLastSeconds}}
+\index{GetEventsInLastSeconds@{GetEventsInLastSeconds}!StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetEventsInLastSeconds()}{GetEventsInLastSeconds()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_event_stream-1-g_a028ce9fa663189a6a546df5c5c426611} 
+IEnumerable$<$ T $>$ Std\+Lib.\+Event\+Stream$<$ T $>$.Get\+Events\+In\+Last\+Seconds (\begin{DoxyParamCaption}\item[{double}]{seconds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the events in last seconds using the specified seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds} & The seconds\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An enumerable of t
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_event_stream-1-g_ae80a905d7b345eac1f47ae0b0ff58d84}\index{StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!StdLib.EventStream$<$ T $>$@{StdLib.EventStream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Subscribe()}{Subscribe()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_event_stream-1-g_ae80a905d7b345eac1f47ae0b0ff58d84} 
+void Std\+Lib.\+Event\+Stream$<$ T $>$.Subscribe (\begin{DoxyParamCaption}\item[{Action$<$ T $>$}]{handler}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Subscribes the handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & The handler\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+reactive.\+cs\end{DoxyCompactItemize}

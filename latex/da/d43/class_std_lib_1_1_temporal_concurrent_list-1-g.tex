@@ -1,0 +1,121 @@
+\doxysection{Std\+Lib.\+Temporal\+Concurrent\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_std_lib_1_1_temporal_concurrent_list-1-g}{}\label{class_std_lib_1_1_temporal_concurrent_list-1-g}\index{StdLib.TemporalConcurrentList$<$ T $>$@{StdLib.TemporalConcurrentList$<$ T $>$}}
+
+
+Thread-\/safe collection with temporal tracking.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_std_lib_1_1_temporal_concurrent_list-1-g_af93d0a9bf0b09d96613f9020be86ca3a}\label{class_std_lib_1_1_temporal_concurrent_list-1-g_af93d0a9bf0b09d96613f9020be86ca3a} 
+{\bfseries Temporal\+Concurrent\+List} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_std_lib_1_1_temporal_concurrent_list-1-g}{Temporal\+Concurrent\+List$<$\+T$>$} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_std_lib_1_1_temporal_concurrent_list-1-g_ab61e824bcf8debd5453f668f6d88393b}{Add}} (T item, string? reason=null)
+\begin{DoxyCompactList}\small\item\em Adds the item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_std_lib_1_1_temporal_concurrent_list-1-g_a878ab4877deb293b0c659ce0603b9dd6}{Remove}} (T item, string? reason=null)
+\begin{DoxyCompactList}\small\item\em Removes the item. \end{DoxyCompactList}\item 
+List$<$ T $>$ \mbox{\hyperlink{class_std_lib_1_1_temporal_concurrent_list-1-g_a77a7a173aa3f663cb71b6f114cb79647}{Get\+Snapshot}} ()
+\begin{DoxyCompactList}\small\item\em Gets the snapshot. \end{DoxyCompactList}\item 
+List$<$ T $>$? \mbox{\hyperlink{class_std_lib_1_1_temporal_concurrent_list-1-g_adcdf69a6f60b88aec9c42e5600487b90}{Get\+Seconds\+Ago}} (double seconds)
+\begin{DoxyCompactList}\small\item\em Gets the seconds ago using the specified seconds. \end{DoxyCompactList}\item 
+List$<$ T $>$? \mbox{\hyperlink{class_std_lib_1_1_temporal_concurrent_list-1-g_a57728ba4ca9ef13459477b306b105a9f}{Get\+Minutes\+Ago}} (double minutes)
+\begin{DoxyCompactList}\small\item\em Gets the minutes ago using the specified minutes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Thread-\/safe collection with temporal tracking. \begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em class}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_std_lib_1_1_temporal_concurrent_list-1-g_ab61e824bcf8debd5453f668f6d88393b}\index{StdLib.TemporalConcurrentList$<$ T $>$@{StdLib.TemporalConcurrentList$<$ T $>$}!Add@{Add}}
+\index{Add@{Add}!StdLib.TemporalConcurrentList$<$ T $>$@{StdLib.TemporalConcurrentList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_temporal_concurrent_list-1-g_ab61e824bcf8debd5453f668f6d88393b} 
+void Std\+Lib.\+Temporal\+Concurrent\+List$<$ T $>$.Add (\begin{DoxyParamCaption}\item[{T}]{item}{, }\item[{string?}]{reason}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item\\
+\hline
+{\em reason} & The reason\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_std_lib_1_1_temporal_concurrent_list-1-g_a57728ba4ca9ef13459477b306b105a9f}\index{StdLib.TemporalConcurrentList$<$ T $>$@{StdLib.TemporalConcurrentList$<$ T $>$}!GetMinutesAgo@{GetMinutesAgo}}
+\index{GetMinutesAgo@{GetMinutesAgo}!StdLib.TemporalConcurrentList$<$ T $>$@{StdLib.TemporalConcurrentList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetMinutesAgo()}{GetMinutesAgo()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_temporal_concurrent_list-1-g_a57728ba4ca9ef13459477b306b105a9f} 
+List$<$ T $>$? Std\+Lib.\+Temporal\+Concurrent\+List$<$ T $>$.Get\+Minutes\+Ago (\begin{DoxyParamCaption}\item[{double}]{minutes}{}\end{DoxyParamCaption})}
+
+
+
+Gets the minutes ago using the specified minutes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minutes} & The minutes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of t
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_temporal_concurrent_list-1-g_adcdf69a6f60b88aec9c42e5600487b90}\index{StdLib.TemporalConcurrentList$<$ T $>$@{StdLib.TemporalConcurrentList$<$ T $>$}!GetSecondsAgo@{GetSecondsAgo}}
+\index{GetSecondsAgo@{GetSecondsAgo}!StdLib.TemporalConcurrentList$<$ T $>$@{StdLib.TemporalConcurrentList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetSecondsAgo()}{GetSecondsAgo()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_temporal_concurrent_list-1-g_adcdf69a6f60b88aec9c42e5600487b90} 
+List$<$ T $>$? Std\+Lib.\+Temporal\+Concurrent\+List$<$ T $>$.Get\+Seconds\+Ago (\begin{DoxyParamCaption}\item[{double}]{seconds}{}\end{DoxyParamCaption})}
+
+
+
+Gets the seconds ago using the specified seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds} & The seconds\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of t
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_temporal_concurrent_list-1-g_a77a7a173aa3f663cb71b6f114cb79647}\index{StdLib.TemporalConcurrentList$<$ T $>$@{StdLib.TemporalConcurrentList$<$ T $>$}!GetSnapshot@{GetSnapshot}}
+\index{GetSnapshot@{GetSnapshot}!StdLib.TemporalConcurrentList$<$ T $>$@{StdLib.TemporalConcurrentList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetSnapshot()}{GetSnapshot()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_temporal_concurrent_list-1-g_a77a7a173aa3f663cb71b6f114cb79647} 
+List$<$ T $>$ Std\+Lib.\+Temporal\+Concurrent\+List$<$ T $>$.Get\+Snapshot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the snapshot. 
+
+\begin{DoxyReturn}{Returns}
+A list of t
+\end{DoxyReturn}
+\Hypertarget{class_std_lib_1_1_temporal_concurrent_list-1-g_a878ab4877deb293b0c659ce0603b9dd6}\index{StdLib.TemporalConcurrentList$<$ T $>$@{StdLib.TemporalConcurrentList$<$ T $>$}!Remove@{Remove}}
+\index{Remove@{Remove}!StdLib.TemporalConcurrentList$<$ T $>$@{StdLib.TemporalConcurrentList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily \label{class_std_lib_1_1_temporal_concurrent_list-1-g_a878ab4877deb293b0c659ce0603b9dd6} 
+void Std\+Lib.\+Temporal\+Concurrent\+List$<$ T $>$.Remove (\begin{DoxyParamCaption}\item[{T}]{item}{, }\item[{string?}]{reason}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item\\
+\hline
+{\em reason} & The reason\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+collections.\+cs\end{DoxyCompactItemize}
