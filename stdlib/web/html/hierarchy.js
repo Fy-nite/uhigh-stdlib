@@ -4,10 +4,18 @@ var hierarchy =
     [ "StdLib.Array< T >", "dc/d36/class_std_lib_1_1_array-1-g.html", null ],
     [ "StdLib.ArrayDiff< T >", "da/d26/class_std_lib_1_1_array_diff-1-g.html", null ],
     [ "Attribute", null, [
+      [ "StdLib.CallAttribute", "dc/dc3/class_std_lib_1_1_call_attribute.html", null ],
+      [ "StdLib.CleanupAttribute", "d2/d5e/class_std_lib_1_1_cleanup_attribute.html", null ],
+      [ "StdLib.CustomComparerAttribute", "dd/d27/class_std_lib_1_1_custom_comparer_attribute.html", null ],
       [ "StdLib.ExpectAttribute", "db/d0f/class_std_lib_1_1_expect_attribute.html", null ],
       [ "StdLib.ExpectExceptionAttribute", "dc/d86/class_std_lib_1_1_expect_exception_attribute.html", null ],
+      [ "StdLib.IgnoreAttribute", "de/dff/class_std_lib_1_1_ignore_attribute.html", null ],
+      [ "StdLib.SetupAttribute", "d4/d30/class_std_lib_1_1_setup_attribute.html", null ],
+      [ "StdLib.TestCategoryAttribute", "d2/d62/class_std_lib_1_1_test_category_attribute.html", null ],
+      [ "StdLib.TestOutputAttribute", "d6/dcf/class_std_lib_1_1_test_output_attribute.html", null ],
       [ "StdLib.TestWithAttribute", "dc/ded/class_std_lib_1_1_test_with_attribute.html", null ],
-      [ "StdLib.TestingOnlyAttribute", "d4/d80/class_std_lib_1_1_testing_only_attribute.html", null ]
+      [ "StdLib.TestingOnlyAttribute", "d4/d80/class_std_lib_1_1_testing_only_attribute.html", null ],
+      [ "StdLib.TimeoutAttribute", "de/d3d/class_std_lib_1_1_timeout_attribute.html", null ]
     ] ],
     [ "System.Attribute", null, [
       [ "StdLib.Funnies.PrintAttribute", "d7/d0a/class_std_lib_1_1_funnies_1_1_print_attribute.html", null ]
@@ -23,6 +31,9 @@ var hierarchy =
     [ "IEnumerable", null, [
       [ "StdLib.ArrayIndice< T >", "df/d47/class_std_lib_1_1_array_indice-1-g.html", null ]
     ] ],
+    [ "IEqualityComparer", null, [
+      [ "StdLib.Examples.IntArrayComparer", "d9/dbd/class_std_lib_1_1_examples_1_1_int_array_comparer.html", null ]
+    ] ],
     [ "StdLib.ILogOutput", "d8/d91/interface_std_lib_1_1_i_log_output.html", [
       [ "StdLib.ConsoleLogOutput", "d0/d26/class_std_lib_1_1_console_log_output.html", null ],
       [ "StdLib.FileLogOutput", "d5/d20/class_std_lib_1_1_file_log_output.html", null ]
@@ -36,5 +47,7 @@ var hierarchy =
     [ "StdLib.Temporal< T >", "da/d82/class_std_lib_1_1_temporal-1-g.html", null ],
     [ "StdLib.TemporalConcurrentList< T >", "da/d43/class_std_lib_1_1_temporal_concurrent_list-1-g.html", null ],
     [ "StdLib.TemporalDictionary< TKey, TValue >", "db/de5/class_std_lib_1_1_temporal_dictionary-2-g.html", null ],
+    [ "StdLib.Examples.TestInput", "d1/de9/class_std_lib_1_1_examples_1_1_test_input.html", null ],
+    [ "StdLib.Examples.tests", "dd/d93/class_std_lib_1_1_examples_1_1tests.html", null ],
     [ "StdLib.TimestampedEvent< T >", "df/d33/class_std_lib_1_1_timestamped_event-1-g.html", null ]
 ];
