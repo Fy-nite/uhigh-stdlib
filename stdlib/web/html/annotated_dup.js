@@ -2,10 +2,7 @@ var annotated_dup =
 [
     [ "StdLib", "da/dd9/namespace_std_lib.html", [
       [ "Examples", "db/db6/namespace_std_lib_1_1_examples.html", [
-        [ "IntArrayComparer", "d9/dbd/class_std_lib_1_1_examples_1_1_int_array_comparer.html", null ],
-        [ "Person", "d4/d8d/class_std_lib_1_1_examples_1_1_person.html", null ],
-        [ "TestInput", "d1/de9/class_std_lib_1_1_examples_1_1_test_input.html", null ],
-        [ "tests", "dd/d93/class_std_lib_1_1_examples_1_1tests.html", null ]
+        [ "Person", "d4/d8d/class_std_lib_1_1_examples_1_1_person.html", null ]
       ] ],
       [ "ApiClient", "d8/da2/class_std_lib_1_1_api_client.html", null ],
       [ "Array< T >", "dc/d36/class_std_lib_1_1_array-1-g.html", "dc/d36/class_std_lib_1_1_array-1-g" ],
@@ -40,5 +37,8 @@ var annotated_dup =
       [ "TestWithAttribute", "dc/ded/class_std_lib_1_1_test_with_attribute.html", null ],
       [ "TimeoutAttribute", "de/d3d/class_std_lib_1_1_timeout_attribute.html", null ],
       [ "TimestampedEvent< T >", "df/d33/class_std_lib_1_1_timestamped_event-1-g.html", "df/d33/class_std_lib_1_1_timestamped_event-1-g" ]
+    ] ],
+    [ "stdlib", "dc/d42/namespacestdlib.html", [
+      [ "PC", "dd/dd6/classstdlib_1_1_p_c.html", null ]
     ] ]
 ];

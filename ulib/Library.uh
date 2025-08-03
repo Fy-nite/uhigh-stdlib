@@ -1,0 +1,32 @@
+// ulib - Class Library
+using System
+using StdLib
+
+namespace ulib
+{
+    /// <summary>
+    /// Main class for the ulib library
+    /// </summary>
+    public class ulibLibrary
+    {
+        /// <summary>
+        /// Gets the library name
+        /// </summary>
+        public static field LibraryName: string = "ulib"
+        
+        /// <summary>
+        /// Gets the library version
+        /// </summary>
+        public static field Version: string = "1.0.0"
+        
+        /// <summary>
+        /// Initializes the library
+        /// </summary>
+        public static func GetVersion(): void
+        {
+            Console.WriteLine("Version: " + LibraryName + " v" + Version);
+        }
+        
+      
+    }
+}

@@ -31,15 +31,13 @@ var hierarchy =
     [ "IEnumerable", null, [
       [ "StdLib.ArrayIndice< T >", "df/d47/class_std_lib_1_1_array_indice-1-g.html", null ]
     ] ],
-    [ "IEqualityComparer", null, [
-      [ "StdLib.Examples.IntArrayComparer", "d9/dbd/class_std_lib_1_1_examples_1_1_int_array_comparer.html", null ]
-    ] ],
     [ "StdLib.ILogOutput", "d8/d91/interface_std_lib_1_1_i_log_output.html", [
       [ "StdLib.ConsoleLogOutput", "d0/d26/class_std_lib_1_1_console_log_output.html", null ],
       [ "StdLib.FileLogOutput", "d5/d20/class_std_lib_1_1_file_log_output.html", null ]
     ] ],
     [ "StdLib.LogEntry", "d5/d11/class_std_lib_1_1_log_entry.html", null ],
     [ "StdLib.Observable< T >", "d2/da8/class_std_lib_1_1_observable-1-g.html", null ],
+    [ "stdlib.PC", "dd/dd6/classstdlib_1_1_p_c.html", null ],
     [ "StdLib.Examples.Person", "d4/d8d/class_std_lib_1_1_examples_1_1_person.html", null ],
     [ "StdLib.RateTracker", "dd/d89/class_std_lib_1_1_rate_tracker.html", null ],
     [ "StdLib.SerializationOptions", "d8/d2f/class_std_lib_1_1_serialization_options.html", null ],
@@ -47,7 +45,5 @@ var hierarchy =
     [ "StdLib.Temporal< T >", "da/d82/class_std_lib_1_1_temporal-1-g.html", null ],
     [ "StdLib.TemporalConcurrentList< T >", "da/d43/class_std_lib_1_1_temporal_concurrent_list-1-g.html", null ],
     [ "StdLib.TemporalDictionary< TKey, TValue >", "db/de5/class_std_lib_1_1_temporal_dictionary-2-g.html", null ],
-    [ "StdLib.Examples.TestInput", "d1/de9/class_std_lib_1_1_examples_1_1_test_input.html", null ],
-    [ "StdLib.Examples.tests", "dd/d93/class_std_lib_1_1_examples_1_1tests.html", null ],
     [ "StdLib.TimestampedEvent< T >", "df/d33/class_std_lib_1_1_timestamped_event-1-g.html", null ]
 ];

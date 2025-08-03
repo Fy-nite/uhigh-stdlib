@@ -5,7 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <PackageId>uhigh-stdlib</PackageId>
-        <Version>1.1.1</Version>
+        <Version>1.1.4</Version>
         <Authors>charlie-san</Authors>
         <Company>Finite</Company>
         <Description>Micro-High's official Standard Library For dotnet</Description>

@@ -2,6 +2,9 @@
 
 Uhigh-Stdlib is the standard library for the Uhigh programming language. It provides essential utilities, data structures, and helpers to accelerate development and ensure consistency across Uhigh projects.
 
+
+Version: 1.1.4
+
 ## Features
 
 - **Core Utilities**: Common functions for string manipulation, math, and collections.

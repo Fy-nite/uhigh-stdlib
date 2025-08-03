@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace StdLib
 {
     /// <summary>
@@ -49,6 +51,44 @@ namespace StdLib
                 Console.Write(prompt);
             }
             return Console.ReadLine();
+        }
+
+        /// <summary>
+        /// Reads a password from the console without echoing characters
+        /// </summary>
+        /// <param name="prompt">The prompt</param>
+        /// <returns>The password string</returns>
+        /// <remarks>
+        /// This method reads a password from the console without displaying the characters typed by the user.
+        /// </remarks>
+        public static string? ReadPassword(string? prompt = null)
+        {
+            if (prompt != null)
+            {
+                Console.Write(prompt);
+            }
+
+            var password = new StringBuilder();
+            while (true)
+            {
+                var keyInfo = Console.ReadKey(intercept: true);
+                if (keyInfo.Key == ConsoleKey.Enter)
+                {
+                    Console.WriteLine();
+                    break;
+                }
+                else if (keyInfo.Key == ConsoleKey.Backspace && password.Length > 0)
+                {
+                    password.Length--;
+                    Console.Write("\b \b");
+                }
+                else if (!char.IsControl(keyInfo.KeyChar))
+                {
+                    password.Append(keyInfo.KeyChar);
+                    Console.Write('*');
+                }
+            }
+            return password.ToString();
         }
     }
 }

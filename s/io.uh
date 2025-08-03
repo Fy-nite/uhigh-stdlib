@@ -12,6 +12,7 @@ namespace StdLib
         public static func Print(message: object): void
         {
             _print(message)
+        
         }
         
         /// <summary>
@@ -20,11 +21,13 @@ namespace StdLib
         /// <param name="values">The values to print</param>
         public static func Print(values: object[]): void
         {
-            var result = "";
-            for (var i = 0; i < Length_of(values); i++)
+			// mmmmmm result :3
+            var result = ""
+            for (var i = 0 i < Length_of(values) i++)
             {
+				// 
                 if (i > 0) {result += " "}
-                result += ToString_of(values[i]);
+                result += ToString_of(values[i])
             }
             Print(result);
         }
@@ -35,11 +38,11 @@ namespace StdLib
         /// <returns>The input string</returns>
         public static func Input(): string
         {
-            #ifdef __DOTNET__
+            #ifdef csharp
             return Console.ReadLine();
             #endif
-            #ifdef __JAVASCRIPT__
-            return null // Placeholder for JavaScript input handling
+            #ifdef javascript
+            return null // Placeholder for JavaScript input handling because it fucking sucks
             #endif
         }
         
@@ -51,7 +54,7 @@ namespace StdLib
         public static func Input(prompt: string): string
         {
             Print(prompt)
-
+			Input()
         }
         
         /// <summary>

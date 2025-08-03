@@ -8,6 +8,7 @@ var searchData=
   ['snapshot_2d1_2dg_5',['Snapshot-1-g',['../d1/dd0/class_std_lib_1_1_snapshot-1-g.html',1,'StdLib']]],
   ['startoffset_6',['StartOffset',['../df/d47/class_std_lib_1_1_array_indice-1-g.html#a7029c0ad995e02256a1ee6225007386e',1,'StdLib::ArrayIndice-1-g']]],
   ['stdlib_7',['StdLib',['../da/dd9/namespace_std_lib.html',1,'']]],
-  ['stdlib_3a_3aexamples_8',['Examples',['../db/db6/namespace_std_lib_1_1_examples.html',1,'StdLib']]],
-  ['subscribe_9',['Subscribe',['../d2/da8/class_std_lib_1_1_observable-1-g.html#a347427fa4cfe53de85b7258516d8a41f',1,'StdLib.Observable-1-g.Subscribe(Action&lt; T, T &gt; observer)'],['../d2/da8/class_std_lib_1_1_observable-1-g.html#a03c75270577a3efc039eba8b9004ca8d',1,'StdLib.Observable-1-g.Subscribe(Action&lt; T &gt; observer)'],['../d5/dce/class_std_lib_1_1_event_stream-1-g.html#ae80a905d7b345eac1f47ae0b0ff58d84',1,'StdLib.EventStream-1-g.Subscribe()']]]
+  ['stdlib_8',['stdlib',['../dc/d42/namespacestdlib.html',1,'']]],
+  ['stdlib_3a_3aexamples_9',['Examples',['../db/db6/namespace_std_lib_1_1_examples.html',1,'StdLib']]],
+  ['subscribe_10',['Subscribe',['../d2/da8/class_std_lib_1_1_observable-1-g.html#a347427fa4cfe53de85b7258516d8a41f',1,'StdLib.Observable-1-g.Subscribe(Action&lt; T, T &gt; observer)'],['../d2/da8/class_std_lib_1_1_observable-1-g.html#a03c75270577a3efc039eba8b9004ca8d',1,'StdLib.Observable-1-g.Subscribe(Action&lt; T &gt; observer)'],['../d5/dce/class_std_lib_1_1_event_stream-1-g.html#ae80a905d7b345eac1f47ae0b0ff58d84',1,'StdLib.EventStream-1-g.Subscribe()']]]
 ];

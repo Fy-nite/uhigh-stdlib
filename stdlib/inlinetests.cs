@@ -4,11 +4,11 @@ using System.Reflection;
 namespace StdLib
 {
     // Attribute to mark test-only classes
-    [AttributeUsage(AttributeTargets.Class)]
+    [AttributeUsage(AttributeTargets.Class, Inherited = true)]
     public class TestingOnlyAttribute : Attribute { }
 
     // Attribute to specify test data for a test method
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
+    [AttributeUsage(AttributeTargets.Method, AllowMultiple = true, Inherited = true)]
     public class TestWithAttribute : Attribute
     {
         public Type InputType { get; }
@@ -19,7 +19,7 @@ namespace StdLib
     }
 
     // Attribute to specify expected value for a variable
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class ExpectAttribute : Attribute
     {
         public object Expected { get; }
@@ -30,7 +30,7 @@ namespace StdLib
     }
 
     // Attribute to specify that a test is expected to throw a specific exception
-    [AttributeUsage(AttributeTargets.Method)]
+    [AttributeUsage(AttributeTargets.Method, Inherited = true)]
     public class ExpectExceptionAttribute : Attribute
     {
         public Type ExceptionType { get; }
@@ -54,7 +54,7 @@ namespace StdLib
     }
 
     // Attribute to specify a timeout (in milliseconds) for a test method
-    [AttributeUsage(AttributeTargets.Method)]
+    [AttributeUsage(AttributeTargets.Method, Inherited = true)]
     public class TimeoutAttribute : Attribute
     {
         public int Milliseconds { get; }
@@ -65,7 +65,7 @@ namespace StdLib
     }
 
     // Attribute to categorize/tag tests
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
+    [AttributeUsage(AttributeTargets.Method, AllowMultiple = true, Inherited = true)]
     public class TestCategoryAttribute : Attribute
     {
         public string Category { get; }
@@ -73,19 +73,19 @@ namespace StdLib
     }
 
     // Attribute to ignore/skip a test
-    [AttributeUsage(AttributeTargets.Method)]
+    [AttributeUsage(AttributeTargets.Method, Inherited = true)]
     public class IgnoreAttribute : Attribute { }
 
     // Attribute to mark setup method (run before each test in class)
-    [AttributeUsage(AttributeTargets.Method)]
+    [AttributeUsage(AttributeTargets.Method, Inherited = true)]
     public class SetupAttribute : Attribute { }
 
     // Attribute to mark cleanup method (run after each test in class)
-    [AttributeUsage(AttributeTargets.Method)]
+    [AttributeUsage(AttributeTargets.Method, Inherited = true)]
     public class CleanupAttribute : Attribute { }
 
     // Attribute to specify a custom comparer for result/field comparison
-    [AttributeUsage(AttributeTargets.Method | AttributeTargets.Field | AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Method | AttributeTargets.Field | AttributeTargets.Property, Inherited = true)]
     public class CustomComparerAttribute : Attribute
     {
         public Type ComparerType { get; }
@@ -93,7 +93,7 @@ namespace StdLib
     }
 
     // Attribute to specify expected console output for a test method
-    [AttributeUsage(AttributeTargets.Method)]
+    [AttributeUsage(AttributeTargets.Method, Inherited = true)]
     public class TestOutputAttribute : Attribute
     {
         public string ExpectedOutput { get; }
